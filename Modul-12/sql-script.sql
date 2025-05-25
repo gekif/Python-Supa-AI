@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS buku (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    judul TEXT NOT NULL,
+    penulis TEXT NOT NULL,
+    tahun_terbit INTEGER
+);
