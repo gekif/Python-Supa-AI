@@ -14,7 +14,7 @@ def start_server():
 
     # Terima koneksi dari client
     conn, addr = server_socket.accept()
-    print(f"Terhudung dengan {addr}")
+    print(f"Terhubung dengan {addr}")
 
     # Terima data dari client
     data = conn.recv(1024)
