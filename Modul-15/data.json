@@ -1,0 +1,46 @@
+{
+  "files": [
+    {
+      "filename": "document1.txt",
+      "filepath": "C:/Users/admin/Documents/document1.txt",
+      "operation": "read",
+      "encoding": "utf-8",
+      "mode": "r",
+      "metadata": {
+        "created_at": "2025-05-20T10:30:00",
+        "owner": "admin"
+      }
+    },
+    {
+      "filename": "report.csv",
+      "filepath": "D:/Projects/data/report.csv",
+      "operation": "write",
+      "encoding": "utf-8",
+      "mode": "w",
+      "content": "id,name,score\n1,Alice,85\n2,Bob,90",
+      "metadata": {
+        "created_at": "2025-05-25T14:00:00",
+        "owner": "user1"
+      }
+    },
+    {
+      "filename": "image_backup.png",
+      "filepath": "E:/Backups/images/image_backup.png",
+      "operation": "copy",
+      "target_path": "F:/Archive/images/image_backup_2025.png",
+      "metadata": {
+        "created_at": "2025-05-01T08:15:00",
+        "owner": "admin"
+      }
+    },
+    {
+      "filename": "old_log.log",
+      "filepath": "C:/Logs/old_log.log",
+      "operation": "delete",
+      "metadata": {
+        "created_at": "2024-12-31T23:59:59",
+        "owner": "system"
+      }
+    }
+  ]
+}
