@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+</head>
+<body>
+<h1>Daftar To-Do</h1>
+<a href="{% url 'task_create' %}">Tambah Tugas Baru</a>
+<ul>
+    {% for task in tasks %}
+    <li>
+        <strong>{{ task.title }}</strong> - {% if task.completed %}Selesai{% else %}Belum Selesai{% endif %}
+        <a href="{% url 'task_update' task.pk %}">Edit</a>
+        <a href="{% url 'task_delete' task.pk %}">Hapus</a>
+    </li>
+    {% empty %}
+    <li>Belum ada tugas.</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
